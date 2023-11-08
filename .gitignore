@@ -1,0 +1,4 @@
+node_modules
+docker_bd_mariadb
+.env
+*.jpg
