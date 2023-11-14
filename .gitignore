@@ -1,4 +1,5 @@
 node_modules
 docker_bd_mariadb
+umNomeBoBo.pem
 .env
 *.jpg
