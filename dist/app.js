@@ -1,5 +1,4 @@
 "use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _dotenv = require('dotenv'); var _dotenv2 = _interopRequireDefault(_dotenv);
-var _path = require('path');
 
 _dotenv2.default.config();
 
@@ -39,7 +38,7 @@ class App {
     this.app.use(_cors2.default.call(void 0, corsOptions));
     this.app.use(_express2.default.urlencoded({ extended: true }));
     this.app.use(_express2.default.json());
-    this.app.use(_express2.default.static(_path.resolve.call(void 0, '../uploads')));
+    this.app.use(_express2.default.static('../uploads'));
   }
 
   routes() {
