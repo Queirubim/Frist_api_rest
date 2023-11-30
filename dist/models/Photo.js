@@ -27,7 +27,7 @@ var _appConfig = require('../config/appConfig'); var _appConfig2 = _interopRequi
         url: {
           type: _sequelize2.default.VIRTUAL,
           get() {
-            return `${_appConfig2.default.url}:${_appConfig2.default.port}/${this.getDataValue('filename')}`;
+            return `${_appConfig2.default.url}/${this.getDataValue('filename')}`;
           },
         },
       },
